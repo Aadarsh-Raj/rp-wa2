@@ -1,0 +1,21 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.149);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+
+}
+.image-container{
+    width: 100%;
+    text-align: center;
+}
+.image-container img{
+    width: 40%;
+   height: 100%;
+   border-radius: 1.2rem;
+}

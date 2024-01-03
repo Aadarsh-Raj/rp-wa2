@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+   padding-left: 2rem;
+   align-items: center;
+}
+.header-left{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.main-section-hr{
+    width: 25%;
+    height: 0.5rem;
+    background-color: #fed16a ;
+    border-radius: 1rem;
+}
