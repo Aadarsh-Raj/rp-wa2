@@ -1,9 +1,11 @@
 import React from 'react'
+import ScrollBar from './Scrollbar'
 
-function AboutSecondCardContainer() {
+function AboutSecondCardContainer(prop) {
   return (
     <div className="about-second-card-item">
-        
+        <h3>{prop.cardData.language} {prop.cardData.percentage}</h3>
+        <ScrollBar percentage={prop.cardData.percentage}/>
     </div>
   )
 }

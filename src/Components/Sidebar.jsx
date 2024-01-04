@@ -2,6 +2,20 @@ import React from "react";
 import PersonalDetailsCard from "./PersonalDetailsCard";
 import "./Style/sidebar.css";
 function Sidebar() {
+  const sidebarDataArray=[
+    {
+      "logo":"",
+      "para":"21 Years Old"
+    },
+    {
+      "logo":"",
+      "para":"Berlin, German"
+    },
+    {
+      "logo":"",
+      "para":"INTJ-T"
+    }
+  ]
   return (
     <>
       <aside className="sidebar">

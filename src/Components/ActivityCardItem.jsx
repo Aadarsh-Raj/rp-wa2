@@ -1,11 +1,13 @@
 import React from 'react'
 
-function ActivityCardItem() {
+function ActivityCardItem(prop) {
   return (
     <div className='activity-card-item'>
-      <h1><img src="" alt="" /> Investments</h1>
+      <h1><img src={prop.cardData.logo} alt="" /> {prop.cardData.heading}</h1>
       <p>
-Exploring Stocks, Crypto and Long-Term Growth Opportunities for Financial Investment</p>
+{prop.cardData.para}
+
+</p>
     </div>
   )
 }

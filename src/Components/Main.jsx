@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import "./Style/main.css";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
@@ -7,11 +7,13 @@ import Certificate from "./Certificate";
 import Project from "./Project";
 import More from "./More";
 import Contact from "./Contact";
+
 function Main() {
     let content = <About />;
   const [selectedLink, setSelectedLink] = useState(content);
+  const contentSectionRef = useRef(null);
+
   const handleNavLinkClick = (link) => {
-    console.log(link);
       switch (link) {
         case "about":
           content = <About />;
@@ -34,13 +36,18 @@ function Main() {
       }
     setSelectedLink(content);
   };
+
+
+  
   return (
     <>
-      <main className="main">
+      <main className="main" >
+        
         <Sidebar />
-        <section className="main-section">
-          <Header clickIt={(link)=>handleNavLinkClick(link)}/>
-          <div className="content-section">
+        <section></section>
+        <section className="main-section" >
+          <Header clickIt={(link)=>handleNavLinkClick(link)}  />
+          <div className="content-section" >
           {selectedLink}
           </div>
         </section>
