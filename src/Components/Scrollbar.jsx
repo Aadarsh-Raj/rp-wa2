@@ -34,14 +34,16 @@ limit = 100;
       style={{
         height: "8px",
         width: "100%",
-        backgroundColor: "yellow",
+        borderRadius:"0.8rem",
+        backgroundColor: "blueviolet",
       }}
     >
       <div
         className="scroll-bar"
         style={{
           height: "100%",
-          backgroundColor: "blue",
+          backgroundColor: "yellow",
+          borderRadius:"0.8rem",
           width: `${progressPercentage}%`,
         }}
       />

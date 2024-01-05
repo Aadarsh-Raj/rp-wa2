@@ -133,7 +133,7 @@ function About() {
     <>
       
       
-      <div className="about-para-container">
+      <div className="about-para-container card">
 
       
       Hello there! 👋 My name is Oktay and I'm from Berlin, Germany. As a Full-Stack software developer, I specialize in creating visually appealing websites, apps and mobile games. My passion for graphic design isn't just a hobby, it's a key ingredient in every project I work on.
@@ -147,6 +147,7 @@ If you have an innovative idea for a project that needs to be developed, I would
 </details>
 
       </div>
+
       <div className="about-first-card-container">
         <h2>Primary Focus</h2>
        {
@@ -155,6 +156,7 @@ If you have an innovative idea for a project that needs to be developed, I would
         <h2>Exploring Creativity</h2>
         {aboutDataArray.map((ele)=>ele.Exploring_Creativity.map(item =>( <AboutFirstCardItem key={item.id} cardData={item} />)))}
       </div>
+      
       <div className="about-second-card-container">
         <h2>Programming Languages</h2>
         {aboutDataArray.map((ele)=>ele.Programming_Language.map(item =>( <AboutSecondCardContainer key={item.id} cardData={item} />)))}
